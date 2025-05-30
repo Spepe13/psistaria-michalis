@@ -113,7 +113,6 @@ footer {
     .menu-item {
         flex-wrap: wrap; /* Επιτρέπει στα στοιχεία να πέφτουν σε νέα γραμμή */
         align-items: flex-start;
-        flex-direction: row-reverse;
     }
 
     .menu-item h3 {
