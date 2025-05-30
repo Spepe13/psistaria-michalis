@@ -1,0 +1,170 @@
+/* Βασικές ρυθμίσεις */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.category {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.category:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.category h2 {
+    color: #555;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-left: 5px solid #ff6347; /* Χρώμα έμφασης */
+    padding-left: 10px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #eee;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #444;
+    flex-grow: 1; /* Επιτρέπει στον τίτλο να πάρει τον διαθέσιμο χώρο */
+}
+
+.menu-item .description {
+    font-size: 0.95rem;
+    color: #777;
+    margin: 5px 0 0;
+    flex-basis: 100%; /* Η περιγραφή να είναι σε νέα γραμμή */
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #ff6347; /* Χρώμα τιμής */
+    font-size: 1.2rem;
+    white-space: nowrap; /* Αποτρέπει την τιμή να σπάει γραμμή */
+    margin-left: 15px; /* Απόσταση από τον τίτλο */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 30px;
+    color: #777;
+    font-size: 0.9rem;
+    background-color: #eee;
+}
+
+/* ------------------------------------- */
+/* Responsive Design (Media Queries)     */
+/* ------------------------------------- */
+
+/* Για οθόνες πλάτους έως 768px (ταμπλέτες και κινητά) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .category h2 {
+        font-size: 1.6rem;
+    }
+
+    .menu-item {
+        flex-wrap: wrap; /* Επιτρέπει στα στοιχεία να πέφτουν σε νέα γραμμή */
+        align-items: flex-start;
+    }
+
+    .menu-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .menu-item .description {
+        font-size: 0.9rem;
+        margin-top: 2px;
+    }
+
+    .menu-item .price {
+        order: -1; /* Μετακινεί την τιμή πάνω από τον τίτλο σε κινητά */
+        margin-left: 0;
+        margin-bottom: 5px; /* Απόσταση κάτω από την τιμή */
+        font-size: 1.1rem;
+        width: 100%; /* Η τιμή να πιάνει όλο το πλάτος */
+        text-align: right; /* Στοίχιση τιμής δεξιά */
+    }
+}
+
+/* Για οθόνες πλάτους έως 480px (μικρότερα κινητά) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .category h2 {
+        font-size: 1.4rem;
+    }
+
+    .menu-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .menu-item .description {
+        font-size: 0.85rem;
+    }
+
+    .menu-item .price {
+        font-size: 1rem;
+    }
+}
