@@ -36,7 +36,7 @@ main {
 }
 
 .category {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     border-bottom: 1px solid #eee;
 }
 
@@ -50,7 +50,6 @@ main {
     color: #fff;
     font-size: 1.8rem;
     margin-bottom: 15px;
-    border-left: 5px solid rgb(80, 51, 52); /* Χρώμα έμφασης */
     padding-left: 10px;
     border-bottom: 1px solid #eee;
 }
@@ -69,7 +68,7 @@ main {
 
 .menu-item h3 {
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #fff;
     flex-grow: 1; /* Επιτρέπει στον τίτλο να πάρει τον διαθέσιμο χώρο */
 }
@@ -78,7 +77,7 @@ main {
 .menu-item .price {
     font-weight: bold;
     color: #ededed; /* Χρώμα τιμής */
-    font-size: 1.2rem;
+    font-size: 1rem;
     white-space: nowrap; /* Αποτρέπει την τιμή να σπάει γραμμή */
     margin-left: 15px; /* Απόσταση από τον τίτλο */
 }
@@ -118,21 +117,16 @@ footer {
     }
 
     .menu-item h3 {
-        font-size: 1.2rem;
+        width:50%;    
     }
 
-    .menu-item .description {
-        font-size: 0.9rem;
-        margin-top: 2px;
-    }
 
     .menu-item .price {
-        order: -1; /* Μετακινεί την τιμή πάνω από τον τίτλο σε κινητά */
         margin-left: 0;
         margin-bottom: 5px; /* Απόσταση κάτω από την τιμή */
-        font-size: 1.1rem;
         width: 100%; /* Η τιμή να πιάνει όλο το πλάτος */
         text-align: right; /* Στοίχιση τιμής δεξιά */
+        width:50%;    
     }
 }
 
@@ -148,17 +142,5 @@ footer {
 
     .category h2 {
         font-size: 1.4rem;
-    }
-
-    .menu-item h3 {
-        font-size: 1.1rem;
-    }
-
-    .menu-item .description {
-        font-size: 0.85rem;
-    }
-
-    .menu-item .price {
-        font-size: 1rem;
     }
 }
