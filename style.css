@@ -37,7 +37,6 @@ main {
 
 .category {
     margin-bottom: 50px;
-    border-bottom: 1px solid #eee;
 }
 
 .category:last-child {
@@ -59,7 +58,6 @@ main {
     justify-content: space-between;
     align-items: baseline;
     padding: 10px 20px;
-    border-bottom: 1px dashed #dedede;
 }
 
 .menu-item:last-child {
