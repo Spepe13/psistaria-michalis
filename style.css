@@ -60,6 +60,7 @@ main {
     align-items: baseline;
     padding: 10px;
     border-bottom:1px solid #dedede;
+    background: white;
 }
 
 .menu-item:last-child {
@@ -69,14 +70,15 @@ main {
 .menu-item h3 {
     margin: 0;
     font-size: 1rem;
-    color: #fff;
+    color: #8F565D;
+    text-align:center;
     flex-grow: 1; /* Επιτρέπει στον τίτλο να πάρει τον διαθέσιμο χώρο */
 }
 
 
 .menu-item .price {
     font-weight: bold;
-    color: #ededed; /* Χρώμα τιμής */
+    color: #8F565D;
     font-size: 1rem;
     white-space: nowrap; /* Αποτρέπει την τιμή να σπάει γραμμή */
     margin-left: 15px; /* Απόσταση από τον τίτλο */
@@ -139,4 +141,8 @@ footer {
     header p {
         font-size: 1rem;
     }
+    .menu-item h3,.menu-item .price {
+        font-size:.8rem;    
+    }
+    
 }
