@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: rgb(140, 84, 92);
+    background-color: #8F565D;
     color: #fff;
     padding: 1.5rem 1rem;
     text-align: center;
@@ -30,7 +30,7 @@ main {
     padding: 20px;
     max-width: 900px;
     margin: 20px auto;
-    background-color: rgb(140, 84, 92);
+    background-color: #8F565D;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
@@ -110,7 +110,7 @@ footer {
 
     .menu-item {
         flex-wrap: wrap; /* Επιτρέπει στα στοιχεία να πέφτουν σε νέα γραμμή */
-        align-items: flex-start;
+        align-items: center;
     }
 
     .menu-item h3 {
