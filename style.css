@@ -7,7 +7,9 @@ body {
     color: #333;
     line-height: 1.6;
 }
-
+.hidden {
+    display:none;
+}
 header {
     background-color: #8F565D;
     color: #fff;
